@@ -16,7 +16,15 @@
       <q-input v-model="text" label="Last name " />
       <q-input v-model="text" label="Contacts number " />
       <q-input v-model="text" label="Email-id " />
-      <q-input v-model="text" label="Date-Of-Birth" />
+      <q-input  v-model="text" label="Date-Of-Birth" >
+      <template v-slot:append>
+        <q-btn flat icon="schedule">
+          <q-popup-proxy>
+            <q-date></q-date>
+          </q-popup-proxy>
+        </q-btn>
+      </template>
+      </q-input>
       <q-input v-model="text" label="Anniversary" />
       <div class="row">
         <q-btn label="Submit" type="submit" color="primary"/>
