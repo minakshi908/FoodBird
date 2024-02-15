@@ -7,7 +7,6 @@ const routes = [
       { path: '', component: () => import('pages/public/HomePage.vue') },
       { path: 'profile', component: () => import('pages/public/ProfilePage.vue') },
       { path: 'login', component: () => import('pages/public/LoginPage.vue') },
-      { path: 'sign', component: () => import('pages/public/SignupForm.vue') },
       { path: 'dine_in', component: () => import('pages/dine_in_page.vue') },
       { path: 'menu', component: () => import('pages/menu_page.vue') },
       { path: 'cart', component: () => import('pages/cart_page.vue') },
@@ -24,7 +23,7 @@ const routes = [
       {path: 'dishes', component: () => import('pages/partner/DishPage.vue')},
       {path: 'orders', component: () => import('pages/partner/OrderPage.vue')},
       {path: 'restaurants', component: () => import('pages/partner/restaurants_Page.vue')},
-      {path: 'restaurants_documents', component: () => import('pages/partner/restaurants_documentsPage.vue')},
+      {path: 'restaurants_documents', component: () => import('pages/partner/restaurants_documents.vue')},
 
        ]
 
